@@ -9,8 +9,10 @@ import {
 } from "react-native";
 import * as Animatable from "react-native-animatable";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
+import Footer from "../components/Footer";
 
-const HomeScreen = ({ navigation }) => {
+const HomeScreen = (props) => {
+  const { navigation } = props;
   const [activeTab, setactiveTab] = React.useState(1);
 
   const changeActiveTab = (newActiveTabValue) => {
@@ -112,6 +114,7 @@ const HomeScreen = ({ navigation }) => {
           );
         })}
       </View>
+      <Footer navigation={navigation}></Footer>
     </Animatable.View>
   );
 };
@@ -119,8 +122,9 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2f5f8",
     marginTop: 10,
+    paddingBottom: 100,
   },
   profileInfo: {
     display: "flex",
