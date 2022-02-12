@@ -129,9 +129,10 @@ const styles = StyleSheet.create({
   profileInfo: {
     display: "flex",
     flexDirection: "row",
-    marginVertical: 5,
+    paddingVertical: 5,
     alignItems: "center",
-    marginHorizontal: 10,
+    paddingHorizontal: 10,
+    backgroundColor: "#fff",
   },
   profileStatement: {
     flex: 1,
@@ -157,11 +158,12 @@ const styles = StyleSheet.create({
     borderRadius: 50,
   },
   tabs: {
-    marginTop: 20,
+    paddingTop: 20,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    marginHorizontal: 20,
+    paddingHorizontal: 20,
+    backgroundColor: "#fff",
   },
   tab: {
     textAlign: "center",

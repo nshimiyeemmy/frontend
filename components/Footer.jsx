@@ -99,8 +99,8 @@ const styles = StyleSheet.create({
   footerPlusContent: {
     backgroundColor: "#f2f5f8",
     // padding: 10,
-    height: 50,
-    width: 50,
+    height: 60,
+    width: 60,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
