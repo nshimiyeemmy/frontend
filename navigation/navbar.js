@@ -3,6 +3,7 @@ import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import SplashScreen from "../screen/SplashScreen";
 import SignInScreen from "../screen/SignInScreen";
 import SignUpScreen from "../screen/SignUpScreen";
+import HomeScreen from "../screen/HomeScreen";
 
 const defaultNavOptions = {
   headerStyle: {
@@ -17,6 +18,7 @@ const defaultNavOptions = {
 
 const Screens = createSwitchNavigator(
   {
+    HomeScreen,
     SplashScreen,
     SignInScreen,
     SignUpScreen,
