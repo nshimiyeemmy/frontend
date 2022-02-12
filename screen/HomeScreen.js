@@ -45,7 +45,21 @@ const HomeScreen = ({ navigation }) => {
             Your Financial Situation is looking good!
           </Text>
         </View>
-        <View></View>
+        <View
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            height: "100%",
+            paddingTop: 5,
+          }}
+        >
+          <View style={styles.menu__dots}>
+            <Text style={styles.menu__dot}></Text>
+            <Text style={styles.menu__dot}></Text>
+            <Text style={styles.menu__dot}></Text>
+          </View>
+          <View></View>
+        </View>
       </View>
       <View style={styles.tabs}>
         <Text
@@ -157,7 +171,7 @@ const styles = StyleSheet.create({
   postsContainer: {
     width: "100%",
     minHeight: 400,
-    backgroundColor: "#e5e5e5",
+    backgroundColor: "#f9fafb",
   },
   post: {
     margin: 10,
@@ -205,6 +219,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 15,
     fontWeight: "500",
+  },
+  menu__dots: {
+    gap: 4,
+  },
+  menu__dot: {
+    height: 3,
+    width: 3,
+    backgroundColor: "black",
   },
 });
 
